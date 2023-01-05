@@ -15,7 +15,7 @@ To use Baker, follow these steps:
 
 1. Clone this repository to your server.
 2. Open the `baker.config` file in your preferred text editor and modify the following variables by inserting your own values:
-   - `slack_webhook_url`: the URL of the Slack webhook you want to use to receive notifications. You can create one by following this guide.
+   - `slack_webhook_url`: the URL of the Slack webhook you want to use to receive notifications.
    - `site_url`: the URL of the website you want to back up. This is used to generate the name of the backup file.
    - `site_path`: the path to the website's root directory.
    - `db_name`: the name of the database to be backed up.
