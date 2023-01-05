@@ -66,22 +66,22 @@ curl -X POST -H 'Content-type: application/json' --data "{
       'color': '#36a64f',
       'fields': [
         {
-          'title': ':date: Date',
+          'title': 'Date',
           'value': '$(date +%d-%m-%Y)',
           'short': true
         },
         {
-          'title': ':truck: Number of backups',
+          'title': 'Number of backups',
           'value': '$backupsRemaining',
           'short': true
         },
         {
-          'title': ':wastebasket: Backup size',
+          'title': 'Backup size',
           'value': '$backupSize',
           'short': true
         },
         {
-          'title': ':wastebasket: Cleaned backups',
+          'title': 'Cleaned backups',
           'value': '$backupsRemoved',
           'short': true
         }
