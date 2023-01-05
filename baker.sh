@@ -39,9 +39,10 @@ rm -r "$tempdir"
 printf "\n > Send the archive to the remote server";
 curl -p --insecure  "ftp://$ftp_host/" --user "$ftp_user:$ftp_pass" -T "$archive"
 
-printf "\n > Remove archive";
+printf "\n > Remove local archive";
 rm -r "$archive"
 
+printf "\n > Remove old backups from the remote server";
 ftpFiles=$(curl -s --list-only --insecure  "ftp://$ftp_host/" --user "$ftp_user:$ftp_pass")
 filteredFtpFiles=$(echo "$ftpFiles" | grep "$site_url")
 totalBackups=$(echo "$filteredFtpFiles" | wc -l)
