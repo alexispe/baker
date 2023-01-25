@@ -1,0 +1,13 @@
+site_url: website.fr
+slack_webhook_url: https://hooks.slack.com/services/XXXXXX/XXXXXX/XXXXXX
+site_path: ./www
+database:
+  name: 
+  host: 
+  user: 
+  pass: 
+  port: 3306
+ftp:
+  host: 
+  user: 
+  pass: 
