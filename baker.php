@@ -85,7 +85,7 @@ try {
                         ],
                         [
                             'title' => 'Size',
-                            'value' => human_filesize($backupSize),
+                            'value' => humanFilesize($backupSize),
                             'short' => true,
                         ],
                         [
@@ -143,7 +143,7 @@ catch (Exception $e) {
 }
 
 
-function human_filesize($bytes, $dec = 2)
+function humanFilesize($bytes, $dec = 2)
 {
     $size   = array('B', 'kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB');
     $factor = floor((strlen($bytes) - 1) / 3);
